@@ -1,0 +1,242 @@
+/* header part */
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    column-gap: 24px;
+    margin: 50px 140px;
+    background-color: white;
+}
+
+header {
+    display: flex;
+    background-color: black;
+    border-radius: 20px;
+
+}
+
+.writting-part {
+    margin: 122px 24px 111px 106px;
+    color: white;
+
+}
+
+.main-header {
+    font-size: 30px;
+
+}
+
+.main-paragraph button {
+    background: #DD0000;
+    border: 1px solid #DD0000;
+    border-radius: 5px;
+    padding: 8px 16px;
+}
+
+.main-paragraph button a {
+    text-decoration: none;
+    color: white;
+}
+
+.main-paragraph button:hover {
+    background-color: chocolate;
+}
+
+.fa-angle-right.empty {
+    margin-left: 8px;
+}
+
+.banner-image img {
+    width: 481px;
+    height: 585px;
+}
+
+/* main part */
+
+.main-section {
+    display: flex;
+    column-gap: 24px;
+}
+
+.aside-box {
+    background-color: black;
+    text-align: center;
+    width: 350px;
+    height: 255px;
+    border-radius: 15px;
+}
+
+.aside-box-content {
+    margin: 26px 13px;
+    background-color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+}
+
+.aside-box-content a {
+    text-decoration: none;
+}
+
+.aside-button button {
+    background: #DD0000;
+    border: 1px solid #DD0000;
+    border-radius: 5px;
+    padding: 10px 50px;
+}
+
+.aside-button button a {
+    text-decoration: none;
+    color: white;
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 24px;
+}
+
+.blog-image img {
+    width: 250px;
+    height: 150px;
+}
+
+.blog-info a {
+    text-decoration: none;
+}
+
+/* footer part */
+footer {
+    text-align: center;
+    background-color: black;
+}
+
+footer h2 {
+    color: white;
+    font-size: 35px;
+    padding-top: 40px;
+}
+
+hr:hover {
+    border: 1px solid blue;
+    cursor: pointer;
+}
+
+ul li {
+    display: inline-block;
+    margin-right: 25px;
+    text-align: center;
+    padding-bottom: 30px;
+
+}
+
+ul li a {
+    text-decoration: none;
+    list-style: none;
+    color: #B9B9B9;
+}
+
+.social-icon {
+    display: flex;
+    justify-content: center;
+    column-gap: 24px;
+    font-size: 30px;
+    color: #DD0000;
+    padding-bottom: 30px;
+}
+
+/* style for upcoming match  */
+.upcoming-blog-image {
+    display: flex;
+}
+
+.upcoming-blog-info a {
+    text-decoration: none;
+}
+
+.upcoming-blog-info {
+    text-align: center;
+    margin: 10px 20px 0px 0px;
+}
+
+
+
+/* --------------------
+responsive for mobile 
+----------------------*/
+
+@media only screen and (max-width:688px) {
+    .container {
+        display: grid;
+        margin: 10px;
+        grid-row-gap: 20px;
+
+    }
+
+    header {
+        width: 100%;
+        display: block;
+        background-color: blue;
+    }
+
+    .writting-part {
+        margin: 15px;
+    }
+
+    .banner-image img {
+        width: 100%;
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-column-gap: 24px;
+        text-align: center;
+    }
+
+    ul li {
+        display: block;
+    }
+}
+
+/* -----------------
+ for tablet device 
+-------------------*/
+
+@media only screen and (min-width:689px)and (max-width:992px) {
+    .container {
+        display: grid;
+        margin: 10px;
+        grid-row-gap: 20px;
+    }
+
+    header {
+        width: 100%;
+    }
+
+    .banner-image img {
+        width: 281px;
+        height: 695px;
+    }
+
+    .aside-box {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 24px;
+        text-align: center;
+    }
+
+
+}
